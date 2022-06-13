@@ -1,0 +1,1292 @@
+@import 'config';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    button:hover {
+
+
+        transform: scale(1.035, 1.035);
+        transition: transform .25s ease-in-out;
+    }
+}
+
+body {
+    // padding-right: 83px;
+    // padding-left: 83px;
+    padding-top: 23px;
+    scroll-behavior: smooth;
+
+    input[type='email'] {
+        padding-left: 15px;
+        padding-right:15px;
+        text-align: center;
+    }
+    input::placeholder{
+        text-align: center;
+    }
+}
+
+// first
+
+// .first{
+//     justify-content: center;
+// }
+
+nav {
+    display: flex;
+    padding-right: 83px;
+    padding-left: 83px;
+    width: 100%;
+    max-width: 1567px;
+    margin: 0 auto;
+
+
+}
+
+
+
+
+.nav-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include typography($font-2, 400, 14px, 30px, #0D1B1E);
+}
+
+.nav-21 {
+    display: flex;
+    align-items: center;
+
+    p {
+        margin: 0 23px;
+
+        span {
+            position: relative;
+            left: 5px;
+            bottom: 1px;
+        }
+
+
+    }
+
+}
+
+.nav-22 {
+    display: flex;
+    align-items: center;
+
+    p+p {
+        margin: 0 23px;
+
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+
+        img {
+            position: relative;
+
+            padding-right: 10px;
+        }
+
+
+
+    }
+
+    p:first-child {
+
+        span {
+            position: relative;
+            left: 5px;
+            bottom: 1px;
+        }
+
+    }
+
+
+
+    button {
+        width: 87px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: $color;
+        @include typography($font-2, 400, 14px, 14px, #FFFFFF)
+    }
+
+
+}
+
+
+
+
+
+// end of first
+
+// start of second
+
+
+
+.second {
+    box-sizing: border-box;
+    padding-top: 121px;
+    margin-bottom: 144px;
+    display: flex;
+    padding-right: 83px;
+    padding-left: 83px;
+    max-width: 1567px;
+    margin: 0 auto;
+}
+
+.second-1 {
+
+    h1 {
+        padding-bottom: 17px;
+        @include typography($font-1, 700, 56px, 70px, #0D1B1E)
+    }
+
+    p {
+        padding-bottom: 25px;
+        @include typography($font-2, 400, 18px, 32px, #0D1B1E)
+    }
+
+    .signup-1 {
+        display: flex;
+        align-items: center;
+
+    }
+
+    input[type='email'] {
+        width: 268px;
+        height: 50px;
+        border-radius: 5px;
+        // text-align: center;
+        border: .5px solid;
+        margin-right: 3px;
+        @include typography($font-2, 300, 16px, 19.36px, #BCBCBC)
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    input::placeholder {
+        padding-left: 0px;
+       
+    }
+
+    button {
+
+        height: 50px;
+        width: 178px;
+        left: 0px;
+        top: 0px;
+        border-radius: 5px;
+        padding: 8px, 20px, 12px, 20px;
+        background-color: $color;
+
+        @include typography($font-2, 400, 18px, 30px, #FFFFFF);
+    }
+
+    ul {
+
+        padding-top: 14px;
+        display: flex;
+        align-items: center;
+
+
+        li {
+            @include typography(Inter, 300, 12px, 14px, #0D1B1E)
+        }
+
+        li+li {
+            margin-left: 20px;
+        }
+
+
+        li:first-child {
+            list-style: none;
+        }
+
+        li:nth-child(4) {
+            position: relative;
+            left: 6px;
+            @include typography(Inter, 600, 14px, 18px, #0D1B1E);
+        }
+
+    }
+
+    .second-2 img {
+        width: 100%;
+        object-fit: cover;
+
+    }
+}
+
+
+
+// end of second
+
+// THIRD
+
+.third {
+
+    line-height: 32px;
+    text-align: center;
+    margin-top: 144px;
+    // padding-bottom: 104px;
+
+    padding-right: 83px;
+    padding-left: 83px;
+    max-width: 1580px;
+    margin: 144px auto 108px auto;
+
+
+    h1 {
+        @include typography($font-1, 700, 36px, 56px, #0D1B1E);
+        padding-bottom: 20px;
+    }
+
+    p {
+        padding: 0 calc(163px - 83px);
+        @include typography($font-2, 400, 18px, 32px, #0D1B1E);
+    }
+
+    .third-p {
+        display: grid;
+        place-items: center;
+        padding-top: 28px;
+
+    }
+
+    .third-p p {
+
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+        @include typography($font-2, 600, 18px, 27px, #0D1B1E);
+
+    }
+
+    .third-p p::after {
+        content: '';
+        height: 1.5px;
+        background-color: #0D1B1E;
+        display: block;
+        position: relative;
+        bottom: 3px;
+
+    }
+
+}
+
+// END OF THIRD
+
+// fourth
+
+.fourth {
+
+
+    // box-sizing: border-box;
+    margin: 0 83px;
+    // padding-right: 97px;
+    // padding-left: 97px;
+    // padding-top: 61px;
+    // padding-bottom: 56px;
+    background-color: #33393F;
+    // text-align: center;
+    // display: flex;
+    // position: relative;
+    // justify-content: center;
+    // top: 150px;
+    // z-index: 2;
+    // margin:auto;
+    // max-width: 1560px;
+
+
+
+    .container {
+        box-sizing: border-box;
+        // margin: 0 83px;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 61px;
+        padding-bottom: 56px;
+        background-color: #33393F;
+        text-align: center;
+        display: flex;
+        // position: relative;
+        // justify-content: center;
+        // top: 150px;
+        // z-index: 2;
+
+
+
+    }
+
+
+    div+div {
+        padding-left: 53px;
+    }
+
+    & div h1 {
+
+        @include typography($font-2, 700, 20px, 25px, white);
+    }
+
+    & div p {
+        padding-top: 24px;
+        @include typography($font-2, 400, 18px, 22.5px, white)
+    }
+
+    & div img {
+        padding-top: 25px;
+    }
+
+}
+
+
+
+
+
+// end of fourth
+
+// fifth
+
+.fifth {
+    background-color: #F5FDFF;
+    padding-top: 251px;
+    margin-top: -148px;
+    position:relative;
+    z-index:-1;
+
+
+
+
+    // margin-bottom: 0;
+
+
+
+    .fifth-p {
+        text-align: center;
+        padding: 0 237px;
+        margin-top: 15px;
+        @include typography($font-2, 400, 18px, 32px, #0D1B1E);
+
+    }
+
+}
+
+.fifth-h1 {
+    text-align: center;
+    padding: 0 375px;
+    @include typography($font-1, 700, 36px, 56px, #0D1B1E);
+    width: 100%;
+    max-width: 1567px;
+    margin: 0 auto;
+}
+
+// fifth-1
+
+.fifth-1 {
+    background-color: white;
+    margin-left: 83px;
+    margin-right: 83px;
+    margin-top: 50px;
+    padding-bottom: 55px;
+
+
+    & p {
+        padding-left: 132px;
+        padding-right: 132px;
+        padding-top: 73px;
+        text-align: center;
+        @include typography($font-2, 400, 18px, 32px, #0D1B1E);
+    }
+
+
+}
+
+.fifth-11 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 123px;
+
+    & div {
+        margin: 0 6px;
+        padding-top: 56px;
+    }
+
+
+    & h1 {
+        display: grid;
+        place-items: center;
+        background-color: #19B885;
+        width: 273px;
+        height: 60px;
+        position: relative;
+        @include typography($font-2, 500, 18px, 21.78px, white)
+    }
+
+    & h1+h1 {
+        margin-right: 30px;
+    }
+
+    & div img {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+
+.fifth-11 h1::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 30px solid white;
+    border-right: 30px solid white;
+    border-bottom: 30px solid #19B885;
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 240px;
+    bottom: 14.8px;
+    transform: rotate(90deg);
+    z-index: 2;
+
+}
+
+.fifth-11 h1::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid white;
+    display: block;
+    position: absolute;
+    right: 227.8px;
+    bottom: 14.8px;
+    transform: rotate(-90deg);
+
+}
+
+.fifth-11 div:first-child h1::after {
+    display: none;
+}
+
+.fifth-11 div:first-child h1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+
+// end of fifth-1
+
+// end of fifth
+
+// sixth
+
+.sixth {
+
+    background-color: #F5FDFF;
+
+    .container {
+        background-color: #F5FDFF;
+        padding: 100px 135px 34px 135px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        max-width: 1567px;
+        margin: 0 auto;
+
+        .sixth-1 {
+            // display: grid;
+            // column-gap: 22px;
+            // row-gap: 70px;
+            // grid-template-columns: repeat(3, 1fr);
+            // grid-template-rows: repeat(3, 1fr);
+            // text-align: center;
+            flex-basis: 50%;
+            display: flex;
+            // flex-basis: calc(100/3);
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+
+            div {
+                display: flex;
+                flex-basis: 33.33%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 63px;
+
+
+                h1 {
+                    width: max-content;
+                    margin-top: 20px;
+                }
+
+            }
+
+            & h1 {
+                @include typography($font-2, 500, 18px, 32px, #0D1B1E);
+            }
+        }
+    }
+
+
+
+}
+
+// end of sixth
+
+// seventh
+
+.seventh {
+    margin-top: 104px;
+    margin-bottom:155px;
+
+
+
+    h1 {
+        padding: 0 237px;
+        text-align: center;
+        @include typography($font-2, 400, 18px, 32px, #0D1B1E)
+    }
+
+
+    .seventh-1 {
+        margin-top: 104px;
+
+        .seven {
+            // display: flex;
+            // justify-content: center;
+
+            // align-items: center;
+
+            // img{
+            //     position: relative;
+            //     bottom:10px;
+            // }
+            margin-bottom: 24px;
+
+
+            div {
+                max-width: 1567px;
+                margin: auto;
+
+                h1 {
+                    margin: auto;
+                    margin-bottom: 0px;
+                    @include typography($font-2, 600, 22px, 32px, #0D1B1E);
+                    position: relative;
+                    width: 60%;
+
+                }
+
+                h1::after {
+                    content: url("-.svg");
+                    position: absolute;
+                    right: 0;
+                    bottom: 5px;
+
+                }
+            }
+
+
+
+
+        }
+
+
+
+
+        p {
+            padding: 0 394px;
+            margin-bottom: 56px;
+            text-align: center;
+            @include typography($font-2, 400, 16px, 30px, #0D1B1E);
+            position: relative;
+
+
+
+        }
+
+
+
+        .seventh-11 {
+            h1 {
+                display: grid;
+                place-items: center;
+                margin: 0 0px;
+                height: 80px;
+                border-top: 1px solid #DEE4E5;
+                padding: 0;
+                width: 60%;
+                margin: auto;
+                position: relative;
+                @include typography($font-2, 600, 22px, 32px, #0D1B1E);
+
+            }
+
+            h1::after {
+                content: url("+.svg");
+                position: absolute;
+                right: 0;
+            }
+
+            div {
+                position: relative;
+                max-width: 1567px;
+                margin: auto;
+            }
+
+            img {
+                position: absolute;
+                right: 360px;
+                bottom: 45%;
+
+            }
+
+
+
+        }
+
+    }
+}
+
+// end of seventh
+
+
+// eighth
+
+.eight {
+    background-color: #19B885;
+    margin-right: 83px;
+    margin-left: 83px;
+    padding-top: 60px;
+    padding-right: 220px;
+    padding-left: 220px;
+    padding-bottom: 60px;
+    // position: relative;
+    // top: 150px;
+    // z-index: 2;
+    margin-top: 0;
+
+
+    h1 {
+        text-align: center;
+        margin-bottom: 16px;
+        @include typography($font-1, 700, 28px, 56px, #FFFFFF);
+
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+
+    input[type='email'] {
+        height: 56px;
+        width: 310px;
+        left: 467px;
+        top: 3713px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin: 0;
+        @include typography($font-2, 400, 18px, 21.78px, #00000080)
+    }
+
+    input[type="email"]::placeholder {
+        padding-left: 16px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    button {
+        height: 56px;
+        width: 195px;
+        left: 777px;
+        top: 3713px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin: 0;
+        background-color: #0D1B1E;
+        color: white;
+        @include typography($font-2, 400, 18px, 21.78px, #FFFFFF)
+    }
+
+    ul {
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+
+        li {
+            @include typography($font-2, 400, 14px, 17px, white);
+        }
+
+        li+li {
+            margin-left: 15px;
+        }
+
+        li:first-child {
+            list-style: none;
+        }
+
+        li:nth-child(4) {
+            text-decoration: underline;
+            @include typography($font-2, 700, 14px, 17px, white);
+        }
+    }
+
+}
+
+// end of eight
+
+// nine
+
+.nine {
+    padding-top: 312px;
+    padding-left: 83px;
+    padding-right: 83px;
+    background-color: #F5FDFF;
+    text-align: center;
+    padding-bottom: 115px;
+    position: relative;
+    z-index: -1;
+    margin-top: -143px;
+
+    h1 {
+        padding: 0 calc(220px - 83px);
+        @include typography($font-1, 700, 36px, 36px, #0D1B1E);
+    }
+
+    p {
+        // margin-top: 32px;
+        margin: 22px auto 0 auto;
+        max-width: 1560px;
+        padding: 0 calc(240px - 83px);
+        @include typography($font-1, 400, 18px, 32px, #0D1B1E);
+    }
+}
+
+// end of nine
+
+// ten
+
+.ten {
+    background-color: #F5FDFF;
+
+    .container {
+        padding-left: 83px;
+        padding-right: 83px;
+        padding-bottom: 177px;
+        background-color: #F5FDFF;
+        display: flex;
+        flex-direction: column;
+        row-gap: 150px;
+        max-width: 1560px;
+        margin: auto;
+
+
+        .ten-1 {
+            display: grid;
+            place-content: center;
+        }
+
+        .ten3:nth-child(odd) {
+            .ten-22 {
+                display: grid;
+                place-items: end;
+            }
+        }
+
+        //    .ten3:nth-child(1) {
+        //     .ten-1{
+        //         position: relative;
+        //         left:40px;
+        //       }
+
+        //       img{
+        //           position: relative;
+        //           left:40px;
+        //       }
+        //    }
+
+        h1 {
+            width: 100%;
+            @include typography($font-2, 700, 36px, 35px, #000000)
+        }
+
+        p {
+            margin-top: 22px;
+            @include typography($font-2, 400, 16px, 30px, #000000)
+        }
+
+        .ten3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 70px;
+
+        }
+    }
+
+
+
+
+
+
+
+}
+
+// end of ten
+
+// eleven
+
+.eleven {
+    background-color: #33393F;
+
+    .container {
+        background-color: #33393F;
+        padding: 104px 0;
+        text-align: center;
+
+
+        p {
+            padding: 0 210px;
+            max-width: 1450px;
+            margin: auto;
+            width: 100%;
+            @include typography($font-2, 400, 18px, 32px, #FFFFFF);
+
+        }
+
+
+        h1 {
+            padding: 0 421px;
+            // margin-bottom: 32px;
+            max-width: 1500px;
+            margin: 0 auto 22px auto;
+
+            @include typography($font-2, 700, 36px, 56px, #FFFFFF);
+
+        }
+    }
+
+}
+
+
+
+// end of eleven
+
+// twelve
+
+.twelve {
+    background-color: #33393F;
+
+    .container {
+        background-color: #33393F;
+        padding: 0 83px;
+        display: grid;
+        column-gap: 94px;
+        row-gap: 108px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding-bottom: 235px;
+        max-width: 1560px;
+        margin: auto;
+
+        div {
+            position: relative;
+            box-sizing: border-box;
+            padding-left: 72px;
+            padding-right: 30px;
+        }
+
+        h1 {
+            margin-bottom: 16px;
+            @include typography($font-2, 700, 24px, 56px, #FFFFFF)
+        }
+
+        p {
+            @include typography($font-2, 400, 18px, 32px, #FFFFFF)
+        }
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+    }
+
+}
+
+// end of twelve
+
+// thirteen
+
+.thirteen {
+    background-color: #19B885;
+    margin-right: 83px;
+    margin-left: 83px;
+    padding-top: 60px;
+    padding-right: 220px;
+    padding-left: 220px;
+    padding-bottom: 70px;
+    position: relative;
+    // bottom: 150px;
+    z-index: 2;
+    margin-top: -150px;
+
+
+    h1 {
+        text-align: center;
+        margin-bottom: 16px;
+        @include typography($font-1, 700, 28px, 56px, #FFFFFF);
+
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+
+    input[type='email'] {
+        height: 56px;
+        width: 310px;
+        left: 467px;
+        top: 3713px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+        margin: 0;
+        @include typography($font-2, 400, 18px, 21.78px, #00000080);
+    }
+
+    input[type="email"]::placeholder {
+        padding-left: 16px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    button {
+        height: 56px;
+        width: 195px;
+        left: 777px;
+        top: 3713px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        margin: 0;
+        background-color: #0D1B1E;
+        color: white;
+        @include typography($font-2, 400, 18px, 21.78px, #FFFFFF)
+    }
+
+    ul {
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+
+        li {
+            @include typography($font-2, 400, 14px, 17px, white);
+        }
+
+        li+li {
+            margin-left: 15px;
+        }
+
+        li:first-child {
+            list-style: none;
+        }
+
+        li:nth-child(4) {
+            text-decoration: underline;
+            @include typography($font-2, 700, 14px, 17px, white);
+        }
+    }
+
+}
+
+// end of thirteen
+
+// fourteen
+
+.fourteen {
+    padding: 0 259px;
+    text-align: center;
+    margin-bottom: 180px;
+    margin-top: 163px;
+
+
+
+    h1 {
+
+        margin-bottom: 12px;
+        @include typography($font-1, 700, 36px, 56px, #0D1B1E);
+
+    }
+
+    p {
+        @include typography($font-2, 400, 18px, 32px, #0D1B1E);
+    }
+
+    div {
+        // margin-top: 87px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1560px;
+        margin: 87px auto 0 auto;
+    }
+
+}
+
+// /end of fourte
+
+// fifteen
+
+.fifteen {
+    margin-top:-25px;
+    margin-bottom: 320px;
+
+
+    h1 {
+        margin-bottom: 110px;
+        text-align: center;
+        @include typography($font-1, 700, 36px, 46px, #000000)
+    }
+
+    .fifteen-img {
+        padding: 0 219px;
+        display: grid;
+        row-gap: 124px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: fit-content;
+        max-width: 1560px;
+        width:100%;
+        margin: auto;
+
+
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+
+// end of fifteen
+
+// sixteen
+
+.sixteen {
+
+    margin-bottom: 160px;
+    margin-top:-170px;
+
+    img {
+        border-radius: 50%;
+    }
+
+    h1 {
+        padding: 0 320px;
+        text-align: center;
+        margin-bottom: 50px;
+        @include typography($font-1, 700, 36px, 56px, #0D1B1E)
+    }
+
+    p {
+        text-align: center;
+        padding: 0 246px;
+        margin-bottom: 98px;
+        @include typography($font-2, 300, 22px, 38px, #00000099)
+    }
+
+    .sixteen-img {
+        padding: 0 344px;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        max-width: 1560px;
+        margin: auto;
+
+
+        .middle {
+            img {
+                margin: auto;
+                border-radius: 50%;
+            }
+        }
+
+        h1 {
+            width: 100%;
+            padding: 0;
+
+            margin-bottom: 0;
+            @include typography($font-2, 500, 26px, 56px, #000000)
+        }
+
+        p {
+            padding: 0;
+            margin-bottom: 0;
+            @include typography($font-2, 300, 12px, 16px, #00000099)
+        }
+
+
+
+    }
+
+
+
+}
+
+// end of sixteen
+
+// seventeen
+
+.seventeen {
+    position: relative;
+    margin: 0 32px;
+    background-color: #364250;
+    padding-bottom: 90px;
+
+    h1 {
+
+        text-align: center;
+        padding: 77px 440px 0 440px;
+        position: relative;
+        z-index: 1;
+        @include typography($font-1, 700, 48px, 48px, white)
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        margin-top: 26px;
+        position: relative;
+        z-index: 1;
+    }
+
+    input {
+        // text-align: center;
+        margin-right: 0;
+        padding-right: 0;
+        width: 310px;
+        height: 55px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        @include typography($font-2, 400, 18px, 21.78px, #0D1B1E)
+    }
+
+    input::placeholder {
+        padding-left: 16px;
+    }
+
+    button {
+
+        margin-left: 0;
+        padding-left: 0;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        width: 195px;
+        height: 55.48px;
+        background-color: #19B885;
+        @include typography($font-2, 400, 18px, 21.78px, #FFFFFF);
+
+    }
+
+    p {
+        margin-top: 17px;
+        text-align: center;
+        @include typography($font-2, 400, 14px, 16.94px, #FFFFFF)
+    }
+
+    img {
+        position: absolute;
+        bottom: 0;
+        right: 80px;
+    }
+}
+
+// end of seventeen
+
+// EIGHTEEN
+
+.eighteen {
+    // margin-top: 161px;
+    padding: 0 180px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1560px;
+    margin: 161px auto 0 auto;
+    margin-bottom:50px;
+    h1 {
+        margin-bottom: 27px;
+        @include typography($font-2, 500, 18px, 21.78px, #0D1B1E)
+    }
+
+    p {
+        @include typography($font-2, 300, 14px, 28px, #0D1B1E80)
+    }
+
+    .tele,
+    .email {
+        display: flex;
+        align-items: center;
+
+
+        img {
+            padding-right: 10px;
+        }
+
+    }
+
+    .media {
+        margin-top: 26px;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            padding-right: 20px;
+
+        }
+
+    }
+
+    .iso {
+        padding-top: 80px;
+    }
+
+
+
+}
+
+// END OF EIGHTEEN
+
+
+
+
+
+
+@import 'media921px';

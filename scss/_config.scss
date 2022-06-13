@@ -1,0 +1,15 @@
+
+
+$font-1:  'Poppins', sans-serif;
+$font-2: 'Inter', sans-serif;
+
+$color: #19B885;
+
+@mixin typography($font,$weight,$size,$line-height,$font-color){
+    font-family: $font;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line-height;
+    color:$font-color;
+}
+
